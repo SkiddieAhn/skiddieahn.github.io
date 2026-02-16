@@ -1,0 +1,33 @@
+theme = "minimal"
+day_night = true
+font = "classic"
+font_size = "S"
+description = "ML Research Engineer"
+email = "skd@yonsei.ac.kr"
+phone = ""
+contact_links = []
+sharing_image = ""
+date_format = "Jan 2, 2006"
+time_format = "3:04 PM"
+main_menu = {align = "l", show_logo = true, highlight_active_link = true}
+sharing = false
+abstract_length = 135
+
+[comments]
+  engine = ""
+  [comments.commentable]
+    post = false
+    book = false
+    project = false
+    publication = false
+    talk = false
+
+[search]
+  engine = "wowchemy"
+
+[map]
+  provider = ""
+
+[marketing]
+  google_analytics = ""
+  google_tag_manager = ""

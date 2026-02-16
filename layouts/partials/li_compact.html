@@ -1,0 +1,112 @@
+{{/* Publication list with badges */}}
+{{ $link := .RelPermalink }}
+
+<div class="pub-list-item" style="margin-bottom: 3rem;">
+  <div style="display: flex; gap: 2rem; align-items: flex-start;">
+    {{ $resource := (.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ with $resource }}
+    <div style="flex-shrink: 0; width: 280px;">
+      {{ $image := .Fit "280x280" }}
+      <a href="{{ $link }}">
+        <img src="{{ $image.RelPermalink }}" alt="" style="width: 100%; border: 1px solid #e0e0e0;">
+      </a>
+    </div>
+    {{ end }}
+    
+    <div style="flex: 1;">
+      <h3 style="font-size: 1.1rem; font-weight: 600; margin: 0 0 0.6rem 0; line-height: 1.4;">
+        <a href="{{ $link }}" style="color: #2c3e50; text-decoration: none;">{{ .Title }}</a>
+      </h3>
+      
+      {{ $isFirstAuthor := false }}
+      {{ with .Params.authors }}
+        {{ $authors := . }}
+        {{ range $i, $author := $authors }}
+          {{ if and (le $i 1) (or (eq $author "Sunghyun Ahn") (eq $author "Sunghyun Ahn*")) }}
+            {{ if or (eq $i 0) (strings.Contains (index $authors 0) "*") }}
+              {{ $isFirstAuthor = true }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        
+        <div style="font-size: 0.95rem; color: #5a6c7d; margin-bottom: 0.4rem; line-height: 1.5;">
+          {{ range $i, $author := $authors }}
+            {{ if or (eq $author "Sunghyun Ahn") (eq $author "Sunghyun Ahn*") }}
+              <strong style="color: #2c3e50;">{{ $author }}</strong>
+            {{ else }}
+              {{ $author }}
+            {{ end }}
+            {{ if ne $i (sub (len $authors) 1) }} , {{ end }}
+          {{ end }}
+          
+          {{ if $isFirstAuthor }}
+            <span style="display: inline-block; background: #e3f2fd; color: #1976d2; padding: 2px 8px; border-radius: 3px; font-size: 0.8rem; margin-left: 0.5rem; font-weight: 600;">First Author</span>
+          {{ end }}
+        </div>
+      {{ end }}
+      
+      <div style="font-size: 0.95rem; margin-bottom: 0.6rem; color: #2c3e50;">
+        {{ $pub := .Params.publication }}
+        {{ $cleanPub := $pub }}
+        
+        {{/* Detect badges */}}
+        {{ $isPremier := and (strings.Contains $pub "WACV") (not (strings.Contains $pub "ACCV")) }}
+        {{ $isBK := strings.Contains $pub "BK list" }}
+        {{ $isSCI := strings.Contains $pub "SCI(E)" }}
+        
+        {{/* Remove badge text from publication */}}
+        {{ $cleanPub = replace $cleanPub " (BK list, IF=1)" "" }}
+        {{ $cleanPub = replace $cleanPub "SCI(E), " "" }}
+        
+        <span>{{ $cleanPub | markdownify }}</span>
+        
+        {{/* Display badges */}}
+        {{ if $isPremier }}
+          <span style="display: inline-block; background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%); color: #000; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; font-weight: 700; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">🏆 Premier</span>
+        {{ end }}
+        
+        {{ if $isBK }}
+          <span style="display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; font-weight: 600;">📊 BK List</span>
+        {{ end }}
+        
+        {{ if $isSCI }}
+          <span style="display: inline-block; background: #f3e5f5; color: #7b1fa2; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; font-weight: 600;">🔬 SCI(E)</span>
+        {{ end }}
+        
+        {{ with $.Date }}
+          <span style="color: #5a6c7d;"> ({{ .Format "2006" }})</span>
+        {{ end }}
+      </div>
+      
+      <div style="font-size: 0.9rem;">
+        {{ $links := slice }}
+        {{ with .Params.url_pdf }}
+          {{ $links = $links | append "arXiv" }}
+        {{ end }}
+        {{ with .Params.url_code }}
+          {{ $links = $links | append "code" }}
+        {{ end }}
+        {{ with .Params.url_project }}
+          {{ $links = $links | append "project" }}
+        {{ end }}
+        
+        {{ if gt (len $links) 0 }}
+          <span style="color: #0984e3;">[ </span>
+          {{ range $i, $name := $links }}
+            {{ if eq $name "arXiv" }}
+              <a href="{{ $.Params.url_pdf }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
+            {{ else if eq $name "code" }}
+              <a href="{{ $.Params.url_code }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
+            {{ else if eq $name "project" }}
+              <a href="{{ $.Params.url_project }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
+            {{ end }}
+            {{ if ne $i (sub (len $links) 1) }}
+              <span style="color: #0984e3;"> / </span>
+            {{ end }}
+          {{ end }}
+          <span style="color: #0984e3;"> ]</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

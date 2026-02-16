@@ -1,0 +1,55 @@
+{{/* Custom list view for publications - Woojung Han style */}}
+{{ $item := .item }}
+
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+<div class="media stream-item" style="margin-bottom: 2.5rem; display: flex; align-items: flex-start;">
+  <div class="mr-3" style="flex-shrink: 0; width: 220px; margin-right: 1.5rem;">
+    {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ with $resource }}
+      {{ $image := .Resize "400x q90" }}
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+        <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" style="width: 100%; border: 1px solid #ddd; border-radius: 3px;">
+      </a>
+    {{ end }}
+  </div>
+  <div class="media-body" style="flex: 1;">
+    <h3 class="article-title mb-1" style="font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; line-height: 1.4;">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="color: #222;">{{ $item.Title }}</a>
+    </h3>
+
+    {{ with $item.Params.authors }}
+    <div class="article-metadata" style="font-size: 0.88rem; color: #666; margin-bottom: 0.3rem;">
+      {{ delimit . ", " | markdownify }}
+    </div>
+    {{ end }}
+
+    <div class="article-metadata" style="font-size: 0.88rem; margin-bottom: 0.6rem; color: #444;">
+      {{ if $item.Params.publication_short }}
+        <strong>{{ $item.Params.publication_short | markdownify }}</strong>
+      {{ else if $item.Params.publication }}
+        <strong>{{ $item.Params.publication | markdownify }}</strong>
+      {{ end }}
+    </div>
+
+    <div class="btn-links" style="font-size: 0.85rem;">
+      {{ if $item.Params.url_pdf }}
+        <a href="{{ $item.Params.url_pdf }}" target="_blank" rel="noopener" style="color: #0066cc; margin-right: 0.8rem;">[ PDF ]</a>
+      {{ end }}
+      {{ if $item.Params.url_code }}
+        <a href="{{ $item.Params.url_code }}" target="_blank" rel="noopener" style="color: #0066cc; margin-right: 0.8rem;">[ code ]</a>
+      {{ end }}
+      {{ if $item.Params.url_project }}
+        <a href="{{ $item.Params.url_project }}" target="_blank" rel="noopener" style="color: #0066cc; margin-right: 0.8rem;">[ project ]</a>
+      {{ end }}
+      {{ if $item.Params.url_video }}
+        <a href="{{ $item.Params.url_video }}" target="_blank" rel="noopener" style="color: #0066cc; margin-right: 0.8rem;">[ video ]</a>
+      {{ end }}
+    </div>
+  </div>
+</div>

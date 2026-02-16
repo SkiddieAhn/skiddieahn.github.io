@@ -1,0 +1,29 @@
+[[main]]
+  name = "Home"
+  url = "#about"
+  weight = 10
+
+[[main]]
+  name = "Research Experiences"
+  url = "#experience"
+  weight = 15
+
+[[main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 16
+
+[[main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 20
+
+[[main]]
+  name = "Academic Services"
+  url = "#academic"
+  weight = 25
+
+[[main]]
+  name = "Awards & Honors"
+  url = "#accomplishments"
+  weight = 30

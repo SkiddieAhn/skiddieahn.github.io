@@ -1,0 +1,38 @@
+{{/* Custom Pages Widget - Title on top */}}
+{{ $ := .root }}
+{{ $page := .page }}
+
+<div class="col-12">
+  {{ with $page.Title }}
+  <div class="section-heading" style="margin-bottom: 2rem;">
+    <h1 style="font-size: 1.8rem; font-weight: 700;">{{ . | markdownify }}</h1>
+  </div>
+  {{ end }}
+
+  {{ $items_type := $page.Params.content.page_type | default "post" }}
+  {{ $items_section := where (where site.RegularPages "Type" $items_type) ".Params.notonhomepage" nil }}
+  {{ $items_count := $page.Params.content.count }}
+  {{ if eq $items_count 0 }}
+    {{ $items_count = 65535 }}
+  {{ else }}
+    {{ $items_count = $items_count | default 5 }}
+  {{ end }}
+
+  {{ $items := sort $items_section ".Date" "desc" }}
+  {{ $items = first $items_count $items }}
+
+  <div style="margin-top: 1rem;">
+    {{ range $items }}
+      {{ partial "li_compact" . }}
+    {{ end }}
+  </div>
+
+  {{ $archive_page := site.GetPage "Section" $items_type }}
+  {{ if gt (len $items_section) $items_count }}
+    <div style="margin-top: 2rem; text-align: center;">
+      <a href="{{ $archive_page.RelPermalink }}" style="color: #0984e3; font-size: 0.95rem;">
+        See all publications <i class="fas fa-angle-double-right"></i>
+      </a>
+    </div>
+  {{ end }}
+</div>
