@@ -33,14 +33,14 @@ social:
   icon_pack: fas
   link: https://shacoding.com/
 
-email: "skd@yonsei.ac.kr"
+email: "skd [at] yonsei [dot] ac [dot] kr"
 
 address:
   street: 396 Seocho-daero, Seocho-gu
   city: Seoul
   region: ""
   postcode: ""
-  country: Republic of Korea
+  country: Korea
 
 office: "PYLER AI Lab"
 
