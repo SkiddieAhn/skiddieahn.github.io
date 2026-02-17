@@ -1,148 +1,33 @@
-// EXACT Woojung Han Style
+// Custom CSS
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.65;
-  color: #212529;
-}
-
-// Profile image - bigger like Woojung
-.avatar {
-  width: 270px !important;
-  height: 270px !important;
-  margin: 0 auto 1.5rem !important;
-}
-
-// Name - bigger font
-.portrait-title h2 {
-  font-size: 2.5rem !important;
-  font-weight: 400 !important;
-  margin-bottom: 0.5rem !important;
-  text-align: center;
-  color: #000;
-}
-
-// Role
-.portrait-title h3 {
-  font-size: 1.1rem !important;
-  font-weight: 400 !important;
-  color: #6c757d !important;
-  text-align: center;
-  margin-bottom: 0.5rem !important;
-}
-
-// Organization link
-.portrait-title h3 a {
-  color: #007bff !important;
-  text-decoration: none;
-}
-
-.portrait-title h3 a:hover {
-  text-decoration: underline;
-}
-
-// Social links - pipe separated
-.network-icon {
-  text-align: center;
-  margin-top: 1.5rem !important;
-  font-size: 0.95rem;
-}
-
-.network-icon a {
-  color: #007bff !important;
-  text-decoration: none;
-  margin: 0 0.2rem;
-}
-
-.network-icon a:hover {
-  text-decoration: underline;
-}
-
-.network-icon a:not(:last-child)::after {
-  content: " |";
-  color: #000;
-  margin-left: 0.3rem;
-}
-
-// Main content
-.col-12.col-lg-8 {
-  font-size: 1.05rem;
-  line-height: 1.75;
-}
-
-.col-12.col-lg-8 p {
-  margin-bottom: 1.2rem;
-}
-
-// Contact and Education in two columns
-.col-12.col-lg-8 h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.col-12.col-lg-8 .row {
-  margin-top: 2.5rem;
-}
-
-// Interests list
-ul.ul-interests {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul.ul-interests li {
-  padding: 0.3rem 0;
-}
-
-// Education list
-ul.ul-edu {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul.ul-edu li {
-  margin-bottom: 1.5rem;
-}
-
-ul.ul-edu .course {
-  font-weight: 600;
-  margin-bottom: 0.2rem;
-}
-
-ul.ul-edu .institution {
-  color: #6c757d;
-  font-size: 0.95rem;
-}
-
-// Navbar
-.navbar {
-  border-bottom: 1px solid #e9ecef;
-}
-
-.navbar-brand {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #000 !important;
-}
-
-// Section spacing
-section {
-  padding: 2.5rem 0;
-}
-
-// Links
 a {
-  color: #007bff;
+  color: #0984e3;
+  text-decoration: none;
 }
 
 a:hover {
   color: #0056b3;
 }
 
-// Experience and Projects sections - consistent styling
+// Fix social icon spacing
+ul.network-icon {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+}
+
+ul.network-icon a {
+  display: inline-block !important;
+}
+
+// Add separator between social links
+ul.network-icon a:not(:last-child)::after {
+  content: " | ";
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+// Experience and Projects sections
 #experience .card,
 #experience .experience-item,
 #projects .card,
@@ -166,32 +51,32 @@ a:hover {
   margin-bottom: 0.5rem !important;
 }
 
-#experience ul,
-#projects ul,
-.widget-pages ul {
+#experience .card-text ul,
+#projects .card-text ul,
+.widget-pages .card-text ul {
   margin-top: 0.4rem !important;
   margin-bottom: 0.4rem !important;
   padding-left: 1.2rem !important;
 }
 
-#experience ul li,
-#projects ul li,
-.widget-pages ul li {
+#experience .card-text ul li,
+#projects .card-text ul li,
+.widget-pages .card-text ul li {
   margin-bottom: 0.5rem !important;
   line-height: 1.7 !important;
 }
 
-#experience ul ul,
-#projects ul ul,
-.widget-pages ul ul {
+#experience .card-text ul ul,
+#projects .card-text ul ul,
+.widget-pages .card-text ul ul {
   margin-top: 0.3rem !important;
   margin-left: 1.5rem !important;
   font-size: 0.95rem !important;
 }
 
-#experience ul ul li,
-#projects ul ul li,
-.widget-pages ul ul li {
+#experience .card-text ul ul li,
+#projects .card-text ul ul li,
+.widget-pages .card-text ul ul li {
   margin-bottom: 0.4rem !important;
   line-height: 1.65 !important;
 }
@@ -254,7 +139,6 @@ a:hover {
   padding-bottom: 0.4rem !important;
 }
 
-// Section titles - make them larger
 #experience h1,
 #projects h1 {
   font-size: 2rem !important;
@@ -262,7 +146,6 @@ a:hover {
   margin-bottom: 1.5rem !important;
 }
 
-// Awards & Honors section - larger fonts and better button visibility
 #accomplishments .card-title {
   font-size: 1.15rem !important;
   font-weight: 600 !important;
@@ -289,4 +172,69 @@ a:hover {
   padding: 0.4rem 1rem !important;
   margin-right: 0.5rem !important;
   margin-top: 0.5rem !important;
+}
+
+.wg-about .row:last-child {
+  margin-top: -1rem !important;
+}
+
+// Mobile: stack image above text for Publications
+@media (max-width: 768px) {
+  .pub-list-item > div {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .pub-list-item > div > div:first-child {
+    order: -1 !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+  
+  .pub-list-item > div > div:last-child {
+    width: 100% !important;
+  }
+}
+
+// Make profile photo smaller and more compact
+.wg-about .avatar {
+  width: 180px !important;
+  height: 180px !important;
+}
+
+@media (max-width: 767.98px) {
+  .wg-about .avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+// Reduce spacing around profile section
+.wg-about #profile {
+  padding: 20px 10px !important;
+}
+
+.wg-about .portrait-title h2 {
+  margin: 15px 0 8px 0 !important;
+  font-size: 1.5em !important;
+}
+
+.wg-about .portrait-title h3 {
+  margin: 0px 0 8px 0 !important;
+}
+
+.wg-about ul.network-icon {
+  margin-top: 20px !important;
+}
+
+// Education section - make it more compact and readable
+.wg-about ul.ul-edu li .description p.course {
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  white-space: pre-wrap !important;
+}
+
+.wg-about ul.ul-edu li .description p.institution {
+  font-size: 0.85rem !important;
+  margin-top: 0.2rem !important;
 }

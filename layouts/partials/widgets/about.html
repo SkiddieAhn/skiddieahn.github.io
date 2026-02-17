@@ -9,7 +9,7 @@
 {{ $person_page_path := (printf "/authors/%s" $author) }}
 {{ $person_page := site.GetPage $person_page_path }}
 {{ if not $person_page }}
-  {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your About widget and create an associated author page if one does not already exist. See https://sourcethemes.com/academic/docs/page-builder/#about " $person_page_path }}
+  {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your About widget and create an associated author page if one doesn't already exist. See https://sourcethemes.com/academic/docs/page-builder/#about " $person_page_path }}
 {{end}}
 {{ $person := $person_page.Params }}
 {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
@@ -18,6 +18,7 @@
 <div class="row">
   <div class="col-12 col-lg-4">
     <div id="profile">
+
       {{ if site.Params.avatar.gravatar }}
       <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
       {{ else if $avatar }}
@@ -28,6 +29,7 @@
       <div class="portrait-title">
         <h2>{{ $person_page.Title }}</h2>
         {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+
         {{ range $person.organizations }}
         <h3>
           {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
@@ -53,7 +55,7 @@
           {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
         {{ end }}
         <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
-          {{ if eq .icon "cv" }}CV{{ else if eq .icon "google-scholar" }}Google Scholar{{ else if eq .icon "github" }}GitHub{{ else if eq .icon "linkedin" }}LinkedIn{{ else if eq .icon "blog" }}Tech Blog{{ end }}
+          {{ .icon }}
         </a>
         {{ end }}
       </ul>
@@ -61,22 +63,34 @@
     </div>
   </div>
   <div class="col-12 col-lg-8">
+
+    {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
+    {{ if and $page.Params.widget $page.Title }}<h1>{{ $page.Title | markdownify | emojify }}</h1>{{ end }}
+
     {{ $person_page.Content }}
 
-    <div class="row" style="margin-top: 2.5rem;">
+    <div class="row">
+
       <div class="col-md-5">
         <h2>Contact</h2>
         <p>
           📧 <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
         </p>
+        {{ with $person.address }}
         <p>
-          📍 396 Seocho-daero, Seocho-gu, Seoul, Republic of Korea
+          📍 {{ .street }}, {{ .city }}{{ with .region }}, {{ . }}{{ end }}{{ with .postcode }}, {{ . }}{{ end }}{{ with .country }}, {{ . }}{{ end }}
         </p>
+        {{ end }}
+        {{ with $person.office }}
+        <p style="margin-top: 0.3rem;">
+          🏢 {{ . }}
+        </p>
+        {{ end }}
       </div>
 
       {{ with $person.education }}
       <div class="col-md-7">
-        <h2>Education</h2>
+        <h2>{{ i18n "education" | default "Education" }}</h2>
         <ul class="ul-edu fa-ul">
           {{ range .courses }}
           <li>
@@ -90,7 +104,7 @@
         </ul>
       </div>
       {{ end }}
-    </div>
 
+    </div>
   </div>
 </div>

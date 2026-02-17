@@ -9,10 +9,10 @@ bio: Machine Learning Research Engineer developing video understanding AI to boo
 
 education:
   courses:
-  - course: M.S. in Computer Science, 2025, GPA 4.33/4.5
+  - course: "M.S. in Computer Science, 2025\nGPA 4.33/4.5"
     institution: Yonsei University, Seoul
     year: ""
-  - course: B.S. in Computer Science, 2023, GPA 4.17/4.5 (Rank 4/51)
+  - course: "B.S. in Computer Science, 2023\nGPA 4.17/4.5 (Rank 4/51)"
     institution: The Catholic University of Korea
     year: ""
 
@@ -35,6 +35,15 @@ social:
 
 email: "skd@yonsei.ac.kr"
 
+address:
+  street: 396 Seocho-daero, Seocho-gu
+  city: Seoul
+  region: ""
+  postcode: ""
+  country: Republic of Korea
+
+office: "PYLER AI Lab"
+
 superuser: true
 
 user_groups:
@@ -43,7 +52,7 @@ user_groups:
 
 I am a **Machine Learning Research Engineer** at **[PYLER](https://www.pyler.tech/)**, developing video understanding AI to boost advertising performance and strengthen brand value.
 
-I am specializing in **video understanding**, **multi-modal deep learning**, and **scalable evaluation systems**.
+I specialize in **video understanding**, **multi-modal deep learning**, and **scalable evaluation systems**, with experience in R&D for video anomaly detection, medical image segmentation, and end-to-end ML model evaluation platforms.
 
 * Graduated with honors from Yonsei University (M.S.) and The Catholic University of Korea (B.S.)
 * Published as first author at premier international conference, and co-authored numerous publications
