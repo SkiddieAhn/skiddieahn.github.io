@@ -54,8 +54,14 @@
         {{ else if in (slice "http" "https") $scheme }}
           {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
         {{ end }}
+        {{ $label := .icon }}
+        {{ if eq .icon "cv" }}{{ $label = "CV" }}{{ end }}
+        {{ if eq .icon "google-scholar" }}{{ $label = "Google Scholar" }}{{ end }}
+        {{ if eq .icon "github" }}{{ $label = "GitHub" }}{{ end }}
+        {{ if eq .icon "linkedin" }}{{ $label = "LinkedIn" }}{{ end }}
+        {{ if eq .icon "blog" }}{{ $label = "Tech Blog" }}{{ end }}
         <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
-          {{ .icon }}
+          {{ $label }}
         </a>
         {{ end }}
       </ul>
