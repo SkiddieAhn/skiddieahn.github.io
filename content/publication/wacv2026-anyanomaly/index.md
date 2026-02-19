@@ -16,4 +16,5 @@ featured: true
 url_pdf: "https://arxiv.org/abs/2503.04504"
 url_code: "https://github.com/SkiddieAhn/Paper-AnyAnomaly"
 url_project: "https://shacoding.com/2025/09/11/tbd-wacv-2026/"
+url_video: "https://www.youtube.com/watch?v=NV1ADHFMhFQ"
 ---

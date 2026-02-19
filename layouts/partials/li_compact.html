@@ -53,10 +53,12 @@
         {{ $isPremier := and (strings.Contains $pub "WACV") (not (strings.Contains $pub "ACCV")) }}
         {{ $isBK := strings.Contains $pub "BK list" }}
         {{ $isSCI := strings.Contains $pub "SCI(E)" }}
+        {{ $isOral := strings.Contains $pub "ORAL" }}
         
         {{/* Remove badge text from publication */}}
         {{ $cleanPub = replace $cleanPub " (BK list, IF=1)" "" }}
         {{ $cleanPub = replace $cleanPub "SCI(E), " "" }}
+        {{ $cleanPub = replace $cleanPub " (ORAL)" "" }}
         
         <span>{{ $cleanPub | markdownify }}</span>
         
@@ -71,6 +73,10 @@
         
         {{ if $isSCI }}
           <span style="display: inline-block; background: #f3e5f5; color: #7b1fa2; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; font-weight: 600;">🔬 SCI(E)</span>
+        {{ end }}
+        
+        {{ if $isOral }}
+          <span style="display: inline-block; background: linear-gradient(135deg, #ff6b35 0%, #f7c59f 100%); color: #fff; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; font-weight: 700; box-shadow: 0 2px 4px rgba(255,107,53,0.35); letter-spacing: 0.03em;">🎤 ORAL</span>
         {{ end }}
         
         {{ with $.Date }}
@@ -89,6 +95,9 @@
         {{ with .Params.url_project }}
           {{ $links = $links | append "project" }}
         {{ end }}
+        {{ with .Params.url_video }}
+          {{ $links = $links | append "video" }}
+        {{ end }}
         
         {{ if gt (len $links) 0 }}
           <span style="color: #0984e3;">[ </span>
@@ -99,6 +108,8 @@
               <a href="{{ $.Params.url_code }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
             {{ else if eq $name "project" }}
               <a href="{{ $.Params.url_project }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
+            {{ else if eq $name "video" }}
+              <a href="{{ $.Params.url_video }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
             {{ end }}
             {{ if ne $i (sub (len $links) 1) }}
               <span style="color: #0984e3;"> / </span>

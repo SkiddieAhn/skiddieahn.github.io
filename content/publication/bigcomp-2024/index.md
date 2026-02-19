@@ -7,7 +7,7 @@ authors:
 - Sanghyun Park
 date: "2024-02-01T00:00:00Z"
 publication_types: ["1"]
-publication: "IEEE International Conference on Big Data and Smart Computing (*BigComp*), Bangkok, Thailand"
+publication: "IEEE International Conference on Big Data and Smart Computing (*BigComp*), Bangkok, Thailand (ORAL)"
 publication_short: "BigComp 2024"
 abstract: ""
 featured: false
