@@ -12,5 +12,6 @@ publication: "ACM/SIGAPP Symposium On Applied Computing (*SAC*), Sicily, Italy (
 publication_short: "SAC 2025"
 abstract: ""
 featured: false
+oral: true
 url_pdf: "https://arxiv.org/abs/2412.19125"
 ---

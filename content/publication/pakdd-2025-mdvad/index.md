@@ -11,5 +11,6 @@ publication: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (*P
 publication_short: "PAKDD 2025"
 abstract: ""
 featured: false
+oral: true
 url_pdf: "https://link.springer.com/chapter/10.1007/978-981-96-8170-9_10"
 ---

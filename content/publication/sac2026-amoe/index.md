@@ -11,4 +11,5 @@ publication: "ACM/SIGAPP Symposium On Applied Computing (*SAC*), Thessaloniki, G
 publication_short: "SAC 2026"
 abstract: ""
 featured: false
+oral: true
 ---
