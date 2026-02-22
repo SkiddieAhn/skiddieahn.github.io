@@ -35,7 +35,7 @@ subtitle = ""
   description = """
   * Conducted research on **deep learning**, **medical image segmentation**, and **video anomaly detection**
   * Graduation thesis: **[VideoPatchCore: An Effective Method to Memorize Normality for Video Anomaly Detection](https://library.yonsei.ac.kr/search/detail/CATTOT000002228093)**
-  * **[Research Portfolio](https://shacoding.com/wp-content/uploads/2019/07/SHA_PF_1124.pdf)**
+  * **[Research Portfolio](https://shacoding.com/wp-content/uploads/2019/07/SHA_PF_0222.pdf)**
   * **Advisor:** Prof. Sanghyun Park (sanghyun@yonsei.ac.kr)
   """
 
