@@ -18,14 +18,14 @@ subtitle = ""
   date_start = "2025-07-01"
   date_end = ""
   description = """
-  * Build a video AI evaluation platform
-    * **Benchmarking:** Drive large-scale benchmarking of frontier models (e.g., Gemini, GPT), improving Video QA performance by 5% over the GPT-4V baseline
-    * **Evaluation Framework:** Design a scenario-driven evaluation framework with scenario packs, evidence bundles, and automated health checks to standardize evaluation and detect regressions as the system evolves
-    * **Visualization Platform:** Build an interactive web dashboard for reviewing research results, supporting researcher collaboration, and demonstrating research outcomes to external partners including Samsung Electronics
-    * **Scalable Infrastructure:** Architect a distributed evaluation system using Ray to process ~300 long videos concurrently for summarization and QA, with a Feast-based feature store managing video-derived features as the single source of truth (SSOT)
-  * Research on video understanding
-    * **Video Scene Segmentation:** Study methods to divide videos into coherent narrative units while preserving contextual information
-    * **Video RAG:** Explore retrieval-augmented generation approaches leveraging visual and auditory features for efficient storage and retrieval of video knowledge
+  * Building a Video AI Evaluation Platform
+    * **Benchmarking:** Build an evaluation pipeline for video understanding and benchmark frontier models (e.g., Gemini, GPT)
+    * **Evaluation Framework:** Design a scenario-based evaluation system to continuously monitor model performance and automatically detect performance regressions after model updates
+    * **Visualization Platform:** Develop an interactive web dashboard to review and share research results and demonstrate outcomes to external partners (e.g., Samsung Electronics)
+    * **Scalable Infrastructure:** Architect a Ray-based distributed video indexing pipeline to process ~300 videos in parallel and build a Feast-based feature store serving as the single source of truth (SSOT) for video-derived features
+  * Research on Video Understanding
+    * **Video Scene Segmentation:** Study methods for segmenting videos into meaningful narrative units (scenes) while preserving contextual information
+    * **Video RAG:** Explore retrieval-augmented generation approaches that leverage visual and audio signals for efficient storage and retrieval of video knowledge
   """
 
 [[experience]]
