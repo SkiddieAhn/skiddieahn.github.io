@@ -36,7 +36,7 @@ subtitle = ""
   date_start = "2022-03-01"
   date_end = "2025-05-01"
   description = """
-  * Conducted research spanning **medical image segmentation** and **video anomaly detection**, with 4 first-author publications at ACCV, WACV, IEEE Access, and BigComp
+  * Conducted research spanning **medical image segmentation** and **video anomaly detection**, with 4 first-author publications.
     * **Segmentation:** Developed DS-UNETR, a dual-stream fusion U-Net Transformer for 3D medical image segmentation (BigComp 2024, ORAL)
     * **Anomaly Detection:** Proposed VideoPatchCore extending PatchCore to the video domain via temporal patch memory (ACCV 2024); developed AnyAnomaly, a zero-shot VAD framework using LVLMs (WACV 2026)
   * Graduation thesis: **[VideoPatchCore: An Effective Method to Memorize Normality for Video Anomaly Detection](https://library.yonsei.ac.kr/search/detail/CATTOT000002228093)** · **[Research Portfolio](https://shacoding.com/wp-content/uploads/2019/07/SHA_PF_0222.pdf)**
