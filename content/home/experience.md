@@ -20,9 +20,9 @@ subtitle = ""
   description = """
   * Building a Video AI Evaluation Platform
     * **Benchmarking:** Build an evaluation pipeline for video understanding and benchmark frontier models (e.g., Gemini, GPT)
-    * **Evaluation Framework:** Design a scenario-based evaluation system to continuously monitor model performance and automatically detect performance regressions after model updates
-    * **Visualization Platform:** Develop an interactive web dashboard to review and share research results and demonstrate outcomes to external partners (e.g., Samsung Electronics)
-    * **Scalable Infrastructure:** Architect a Ray-based distributed video indexing pipeline to process ~300 videos in parallel and build a Feast-based feature store serving as the single source of truth (SSOT) for video-derived features
+    * **Monitoring:** Design a scenario-based evaluation system to continuously monitor model performance and automatically detect performance regressions after model updates
+    * **Visualization:** Develop an interactive web dashboard to review and share research results and demonstrate outcomes to external partners (e.g., Samsung Electronics)
+    * **Infrastructure:** Architect a Ray-based distributed video indexing pipeline to process ~300 videos in parallel and build a Feast-based feature store serving as the single source of truth (SSOT) for video-derived features
   * Research on Video Understanding
     * **Video Scene Segmentation:** Study methods for segmenting videos into meaningful narrative units (scenes) while preserving contextual information
     * **Video RAG:** Explore retrieval-augmented generation approaches that leverage visual and audio signals for efficient storage and retrieval of video knowledge
