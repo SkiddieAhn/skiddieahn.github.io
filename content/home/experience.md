@@ -18,14 +18,14 @@ subtitle = ""
   date_start = "2025-07-01"
   date_end = ""
   description = """
-  * Built an end-to-end ML model evaluation platform
-    * **Benchmarking:** Drove large-scale benchmarking of frontier models (e.g., Gemini, GPT-4), improving Video QA performance by 5% over the GPT-4V baseline
-    * **Evaluation Framework:** Designed a scenario-driven evaluation framework with scenario packs, evidence bundles, and automated health checks to ensure reproducibility and catch regressions
-    * **Visualization Platform:** Built an interactive web dashboard for evaluation results exploration, side-by-side demos, and researcher collaboration; key demonstration platform for enterprise partners including Samsung Electronics
-    * **Scalable Infrastructure:** Architected a distributed evaluation system using Ray to process ~300 long videos concurrently, with a Feast-based feature store managing video-derived features as the single source of truth (SSOT)
-  * Conducted research on video understanding
-    * **Video Scene Segmentation:** Studied methods to divide videos into coherent narrative units while preserving contextual information
-    * **Video RAG:** Explored retrieval-augmented generation approaches leveraging visual and auditory features for efficient storage and retrieval of video knowledge
+  * Build an end-to-end ML model evaluation platform
+    * **Benchmarking:** Drive large-scale benchmarking of frontier models (e.g., Gemini, GPT-4), improving Video QA performance by 5% over the GPT-4V baseline
+    * **Evaluation Framework:** Design a scenario-driven evaluation framework with scenario packs, evidence bundles, and automated health checks to ensure reproducibility and catch regressions
+    * **Visualization Platform:** Build an interactive web dashboard for evaluation results exploration, side-by-side demos, and researcher collaboration; key demonstration platform for enterprise partners including Samsung Electronics
+    * **Scalable Infrastructure:** Architect a distributed evaluation system using Ray to process ~300 long videos concurrently, with a Feast-based feature store managing video-derived features as the single source of truth (SSOT)
+  * Conduct research on video understanding
+    * **Video Scene Segmentation:** Study methods to divide videos into coherent narrative units while preserving contextual information
+    * **Video RAG:** Explore retrieval-augmented generation approaches leveraging visual and auditory features for efficient storage and retrieval of video knowledge
   """
 
 [[experience]]
