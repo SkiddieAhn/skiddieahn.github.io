@@ -4,7 +4,7 @@ headless = true
 active = true
 weight = 25
 
-title = "Research Experiences"
+title = "Experiences"
 subtitle = ""
 
 [design.spacing]
