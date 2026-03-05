@@ -20,10 +20,10 @@ subtitle = ""
   description = """
   * Build an end-to-end ML model evaluation platform
     * **Benchmarking:** Drive large-scale benchmarking of frontier models (e.g., Gemini, GPT), improving Video QA performance by 5% over the GPT-4V baseline
-    * **Evaluation Framework:** Design a scenario-driven evaluation framework with scenario packs, evidence bundles, and automated health checks to ensure reproducibility and catch regressions
-    * **Visualization Platform:** Build an interactive web dashboard for evaluation results exploration, side-by-side demos, and researcher collaboration; key demonstration platform for enterprise partners including Samsung Electronics
-    * **Scalable Infrastructure:** Architect a distributed evaluation system using Ray to process ~300 long videos concurrently, with a Feast-based feature store managing video-derived features as the single source of truth (SSOT)
-  * Conduct research on video understanding
+    * **Evaluation Framework:** Design a scenario-driven evaluation framework with scenario packs, evidence bundles, and automated health checks to ensure reproducibility and detect regressions as the system evolves
+    * **Visualization Platform:** Build an interactive web dashboard for reviewing research results, supporting researcher collaboration, and demonstrating research outcomes to external partners including Samsung Electronics
+    * **Scalable Infrastructure:** Architect a distributed evaluation system using Ray to process ~300 long videos concurrently for summarization and QA, with a Feast-based feature store managing video-derived features as the single source of truth (SSOT)
+  * Research on video understanding
     * **Video Scene Segmentation:** Study methods to divide videos into coherent narrative units while preserving contextual information
     * **Video RAG:** Explore retrieval-augmented generation approaches leveraging visual and auditory features for efficient storage and retrieval of video knowledge
   """
