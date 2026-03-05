@@ -37,8 +37,8 @@ subtitle = ""
   date_end = "2025-05-01"
   description = """
   * Conducted research spanning **medical image segmentation** and **video anomaly detection**, with 4 first-author publications.
-    * **Segmentation:** Developed DS-UNETR, a dual-stream fusion U-Net Transformer for 3D medical image segmentation (BigComp 2024, ORAL)
-    * **Anomaly Detection:** Proposed VideoPatchCore extending PatchCore to the video domain via temporal patch memory (ACCV 2024); developed AnyAnomaly, a zero-shot VAD framework using LVLMs (WACV 2026)
+* **Segmentation:** Developed **[DS-UNETR](https://skiddieahn.github.io/publication/bigcomp-2024/)**, a dual-stream fusion U-Net Transformer for 3D medical image segmentation (BigComp 2024, ORAL)
+    * **Anomaly Detection:** Proposed **[VideoPatchCore](https://skiddieahn.github.io/publication/accv2024-videopatchcore/)** extending PatchCore to the video domain via temporal patch memory (ACCV 2024); developed **[F2LM](https://skiddieahn.github.io/publication/ieee-access-2024/)**, an SSL-based framework to amplify anomaly signals via frame destruction (IEEE Access 2024); developed **[AnyAnomaly](https://skiddieahn.github.io/publication/wacv2026-anyanomaly/)**, a zero-shot VAD framework using LVLMs (WACV 2026)
   * Graduation thesis: **[VideoPatchCore: An Effective Method to Memorize Normality for Video Anomaly Detection](https://library.yonsei.ac.kr/search/detail/CATTOT000002228093)** · **[Research Portfolio](https://shacoding.com/wp-content/uploads/2019/07/SHA_PF_0222.pdf)**
   * **Advisor:** Prof. Sanghyun Park (sanghyun@yonsei.ac.kr)
   """
