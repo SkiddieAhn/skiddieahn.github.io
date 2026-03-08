@@ -1,20 +1,42 @@
 # Languages
-#   Create a `[X]` block for each language you want, where X is the language ID.
-#   Refer to https://sourcethemes.com/academic/docs/language/
 
-# Configure the English version of the site.
 [en]
   languageCode = "en-us"
-  # contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  contentDir = "content"
 
-# Uncomment the lines below to configure your website in a second language.
-#[zh]
-#  languageCode = "zh-Hans"
-#  contentDir = "content/zh"
-#  title = "Chinese website title..."
-#  [zh.params]
-#    description = "Site description in Chinese..."
-#  [[zh.menu.main]]
-#    name = "Wo"
-#    url = "#about"
-#    weight = 1
+[ko]
+  languageCode = "ko-kr"
+  contentDir = "content/ko"
+  title = "안성현"
+  [ko.params]
+    description = "비디오를 이해하는 AI 기술로 광고 효과를 높이고 브랜드 가치를 향상시키는 ML Research Engineer입니다."
+
+  [[ko.menu.main]]
+    name = "홈"
+    url = "#about"
+    weight = 10
+
+  [[ko.menu.main]]
+    name = "경력"
+    url = "#experience"
+    weight = 15
+
+  [[ko.menu.main]]
+    name = "프로젝트"
+    url = "#projects"
+    weight = 16
+
+  [[ko.menu.main]]
+    name = "논문"
+    url = "#publications"
+    weight = 20
+
+  [[ko.menu.main]]
+    name = "학술 활동"
+    url = "#academic"
+    weight = 25
+
+  [[ko.menu.main]]
+    name = "수상 경력"
+    url = "#accomplishments"
+    weight = 30

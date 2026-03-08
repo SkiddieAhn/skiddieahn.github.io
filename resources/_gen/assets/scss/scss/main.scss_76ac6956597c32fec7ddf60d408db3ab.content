@@ -9312,3 +9312,9 @@ ul.network-icon a:not(:last-child)::after {
 .wg-about ul.ul-edu li .description p.institution {
   font-size: 0.85rem !important;
   margin-top: 0.2rem !important; }
+
+.i18n-dropdown .nav-link span {
+  font-size: 0.9rem !important; }
+
+.wg-about .portrait-title h2 {
+  font-weight: 700 !important; }

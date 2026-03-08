@@ -238,3 +238,13 @@ ul.network-icon a:not(:last-child)::after {
   font-size: 0.85rem !important;
   margin-top: 0.2rem !important;
 }
+
+// Fix: 언어 토글 글자 크기 통일
+.i18n-dropdown .nav-link span {
+  font-size: 0.9rem !important;
+}
+
+// Fix: 이름 볼드체
+.wg-about .portrait-title h2 {
+  font-weight: 700 !important;
+}

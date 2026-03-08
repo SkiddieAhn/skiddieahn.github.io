@@ -28,7 +28,7 @@ subtitle = ""
 
 [[experience]]
   title = "AI-Powered Smart Fridge Chatbot"
-  company = "Catholic Univ."
+  company = "The Catholic University of Korea"
   company_url = ""
   location = ""
   date_start = "2022-01-01"

@@ -9,6 +9,10 @@
 {{ $person_page_path := (printf "/authors/%s" $author) }}
 {{ $person_page := site.GetPage $person_page_path }}
 {{ if not $person_page }}
+  {{ $person_page_path = (printf "/%s/authors/%s" site.Language.Lang $author) }}
+  {{ $person_page = site.GetPage $person_page_path }}
+{{ end }}
+{{ if not $person_page }}
   {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your About widget and create an associated author page if one doesn't already exist. See https://sourcethemes.com/academic/docs/page-builder/#about " $person_page_path }}
 {{end}}
 {{ $person := $person_page.Params }}
@@ -78,7 +82,7 @@
     <div class="row">
 
       <div class="col-md-5">
-        <h2>Contact</h2>
+        <h2>{{ if eq site.Language.Lang "ko" }}연락처{{ else }}Contact{{ end }}</h2>
         <p>
           📧 <span>{{ $person.email }}</span>
         </p>
