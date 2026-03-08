@@ -27,7 +27,7 @@ subtitle = ""
   """
 
 [[experience]]
-  title = "AI-Powered Food Expiration Management Chatbot: Fridge"
+  title = "AI-Powered Food Expiration Management Chatbot"
   company = "The Catholic University of Korea"
   company_url = ""
   location = ""
