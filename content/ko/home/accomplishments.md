@@ -23,7 +23,7 @@ subtitle = ""
 [[item]]
   organization = "가톨릭대학교"
   organization_url = ""
-  title = "학업 우수상 (우수 졸업, 상위 8%)"
+  title = "학업 우수상 (우수 졸업)"
   url = ""
   certificate_url = ""
   date_start = "2023-02-01"
