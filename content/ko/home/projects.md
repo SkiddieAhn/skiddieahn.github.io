@@ -27,7 +27,7 @@ subtitle = ""
   """
 
 [[experience]]
-  title = "AI 기반 스마트 냉장고 챗봇: 프리지"
+  title = "AI 기반 식품 유통기한 관리 챗봇: 프리지"
   company = "가톨릭대학교"
   company_url = ""
   location = ""

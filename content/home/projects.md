@@ -27,7 +27,7 @@ subtitle = ""
   """
 
 [[experience]]
-  title = "AI-Powered Smart Fridge Chatbot"
+  title = "AI-Powered Food Expiration Management Chatbot: Fridge"
   company = "The Catholic University of Korea"
   company_url = ""
   location = ""
@@ -40,6 +40,6 @@ subtitle = ""
   
   * Led the **Fridge team**; designed and implemented an **end-to-end AI system**
   * Developed a **[vision-based AI chatbot for automatic food expiration-date recognition and management](https://shacoding.com/2022/06/05/ai-%ea%b8%b0%eb%b0%98-%eb%83%89%ec%9e%a5%ea%b3%a0-%ec%9c%a0%ed%86%b5%ea%b8%b0%ed%95%9c-%ea%b4%80%eb%a6%ac-%ec%b1%97%eb%b4%87-%ec%ba%a1%ec%8a%a4%ed%86%a4-%ed%94%84%eb%a1%9c%ec%a0%9d%ed%8a%b8/)**
-  * Conducted **industry interviews with E-mart (Shinsegae Group)** to validate real-world adoption scenarios
+  * Conducted **industry interviews with Korea E-mart (Shinsegae Group)** to validate real-world adoption scenarios
   """
 +++
