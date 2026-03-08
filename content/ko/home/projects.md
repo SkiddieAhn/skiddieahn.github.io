@@ -12,7 +12,7 @@ subtitle = ""
 
 [[experience]]
   title = "Scene-Aware Summarization for Long and Multi-Video RAG"
-  company = "PYLER"
+  company = "주식회사 파일러"
   company_url = ""
   location = ""
   date_start = "2025-10-01"

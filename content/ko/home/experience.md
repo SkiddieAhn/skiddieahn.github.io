@@ -12,7 +12,7 @@ subtitle = ""
 
 [[experience]]
   title = "ML Research Engineer (전문연구요원)"
-  company = "PYLER"
+  company = "주식회사 파일러"
   company_url = ""
   location = "서울, 대한민국"
   date_start = "2025-07-01"
