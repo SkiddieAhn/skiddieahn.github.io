@@ -38,7 +38,7 @@ subtitle = ""
   description = """
   * 비디오 이상 탐지 및 의료 영상 분할 분야 연구, 제1저자 논문 4편 게재
     * **이상 탐지:** LVLM 기반 제로샷 VAD 프레임워크 **[AnyAnomaly](https://skiddieahn.github.io/publication/wacv2026-anyanomaly/)** 개발 (WACV 2026); PatchCore를 비디오 도메인으로 확장한 **[VideoPatchCore](https://skiddieahn.github.io/publication/accv2024-videopatchcore/)** 제안 (ACCV 2024); 프레임 손상을 통한 이상 신호 증폭 SSL 프레임워크 **[MAMA](https://skiddieahn.github.io/publication/ieee-access-2024/)** 개발 (IEEE Access)
-    * **의료 영상 분할:** 3D 의료 영상 분할을 위한 이중 스트림 융합 U-Net Transformer **[DS-UNETR](https://skiddieahn.github.io/publication/bigcomp-2024/)** 개발 (BigComp 2024, ORAL)
+    * **영상 분할:** 3D 의료 영상 분할을 위한 이중 스트림 융합 U-Net Transformer **[DS-UNETR](https://skiddieahn.github.io/publication/bigcomp-2024/)** 개발 (BigComp 2024, ORAL)
   * 졸업 논문: **[VideoPatchCore: An Effective Method to Memorize Normality for Video Anomaly Detection](https://library.yonsei.ac.kr/search/detail/CATTOT000002228093)** · **[연구 포트폴리오](https://shacoding.com/wp-content/uploads/2019/07/SHA_PF_0222.pdf)**
   * **지도교수:** 박상현 교수 (sanghyun@yonsei.ac.kr)
   """
