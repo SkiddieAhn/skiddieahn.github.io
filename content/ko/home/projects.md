@@ -20,7 +20,7 @@ subtitle = ""
   description = """
   **포스터 발표**
   
-  **NVIDIA GTC 2026** (San Jose, CA, USA) 승인
+  **[NVIDIA GTC 2026]((https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-p81210/))** (San Jose, CA, USA) 승인
   
   * 장면 기반 비디오 인덱싱을 통해 비디오 검색 성능 향상
   * 장편 비디오 벤치마크에서 균일 분할 vs. 장면 기반 분할 **Video QA 비교 실험** 수행

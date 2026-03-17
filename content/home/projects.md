@@ -20,7 +20,7 @@ subtitle = ""
   description = """
   **Poster presentation**
   
-  Accepted at **NVIDIA GTC 2026**, San Jose, CA
+  Accepted at **[NVIDIA GTC 2026](https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-p81210/)**, San Jose, CA
   
   * Enhanced video retrieval performance through scene-based video indexing
   * Conducted **Video QA experiments comparing uniform segmentation and scene-based segmentation** on long-video benchmark
