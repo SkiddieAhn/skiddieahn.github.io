@@ -50,7 +50,7 @@ user_groups:
 - Researchers
 ---
 
-I am a **Machine Learning Research Engineer** at **[PYLER](https://www.pyler.tech/)**, developing video understanding AI to boost advertising performance and strengthen brand value.
+I am a **Machine Learning Research Engineer** at **[PYLER](https://www.pyler.tech/)**, developing video understanding AI to boost advertising performance and protect and enhance brand value.
 
 I specialize in **video understanding**, **multi-modal deep learning**, and **scalable evaluation systems**, with experience in R&D for video anomaly detection, medical image segmentation, and end-to-end ML model evaluation platforms.
 

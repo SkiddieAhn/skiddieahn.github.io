@@ -5,7 +5,7 @@ organizations:
 - name: PYLER
   url: "https://www.pyler.tech/"
 
-bio: 비디오를 이해하는 AI 기술로 광고 효과를 높이고 브랜드 가치를 향상시키는 ML Research Engineer입니다.
+bio: 비디오를 이해하는 AI 기술로 광고 효과를 높이고 브랜드 가치를 보호 및 향상시키는 ML Research Engineer입니다.
 
 education:
   courses:
@@ -51,7 +51,7 @@ user_groups:
 ---
 
 저는 **[PYLER](https://www.pyler.tech/)** 소속 **Machine Learning Research Engineer**입니다.
-비디오를 이해하는 AI 기술을 통해 광고 효과를 높이고 브랜드 가치를 향상시키는 일을 하고 있습니다.
+비디오를 이해하는 AI 기술을 통해 광고 효과를 높이고 브랜드 가치를 보호 및 향상시키는 일을 하고 있습니다.
 
 **비디오 이해**, **멀티모달 딥러닝**, **대규모 평가 시스템** 분야를 전문으로 하며,
 비디오 이상 탐지, 의료 영상 분할, ML 모델 통합 평가 플랫폼 R&D 경험을 보유하고 있습니다.
