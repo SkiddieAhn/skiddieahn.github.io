@@ -22,7 +22,7 @@ subtitle = ""
     * **Scene Segmentation:** 비디오의 맥락을 유지한 채 분석하기 위한 멀티모달 Scene Segmentation 모델 연구 및 개발
     * **Video Indexing:** Scene-aware Video Indexing 시스템 설계 및 개발
   * **Video Content Moderation**
-    * **Benchmark Dataset:** Video Safety Benchmark Dataset 구축 파이프라인 개발
+    * **Benchmark Dataset:** Video Safety 벤치마크 데이터셋 구축 파이프라인 개발
     * **Model Benchmarking:** Video Safety 모델 벤치마킹 및 성능 고도화
   * **AI Infrastructure**
     * **Scalable AI Infrastructure:** Ray와 vLLM 기반의 대규모 비디오 처리를 위한 분산 AI 파이프라인 설계
