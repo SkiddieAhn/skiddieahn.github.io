@@ -24,6 +24,9 @@ subtitle = ""
   * Video Content Moderation
     * **Benchmark Dataset:** Develop pipelines for building video safety benchmark datasets
     * **Model Benchmarking:** Benchmark and improve video safety models
+  * AI Infrastructure
+    * **Scalable AI Infrastructure:** Architect distributed AI pipelines using Ray and vLLM for large-scale video processing
+    * **Feature Management:** Build Feast-based feature stores as the single source of truth (SSOT) for video-derived features
   """
 
 [[experience]]

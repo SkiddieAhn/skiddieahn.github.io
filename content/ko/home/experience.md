@@ -19,11 +19,14 @@ subtitle = ""
   date_end = ""
   description = """
   * **Context-aware Video Understanding**
-    * **Scene Segmentation:** 비디오의 맥락을 유지한 채 분석하기 위한 Multimodal Scene Segmentation 모델 연구 및 개발
+    * **Scene Segmentation:** 비디오의 맥락을 유지한 채 분석하기 위한 멀티모달 Scene Segmentation 모델 연구 및 개발
     * **Video Indexing:** Scene-aware Video Indexing 시스템 설계 및 개발
   * **Video Content Moderation**
-    * **Benchmark Dataset:** Video Safety Benchmark Dataset 구축 Pipeline 개발
-    * **Model Benchmarking:** Video Safety Model 벤치마킹 및 성능 고도화
+    * **Benchmark Dataset:** Video Safety Benchmark Dataset 구축 파이프라인 개발
+    * **Model Benchmarking:** Video Safety 모델 벤치마킹 및 성능 고도화
+  * **AI Infrastructure**
+    * **Scalable AI Infrastructure:** Ray와 vLLM 기반의 대규모 비디오 처리를 위한 분산 AI 파이프라인 설계
+    * **Feature Management:** 비디오 파생 피처의 단일 신뢰 데이터(SSOT)를 위한 Feast 기반 Feature Store 구축 및 관리
   """
 
 [[experience]]
