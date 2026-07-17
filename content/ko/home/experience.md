@@ -18,14 +18,12 @@ subtitle = ""
   date_start = "2025-07-01"
   date_end = ""
   description = """
-  * **Video AI Evaluation Platform 구축**
-    * **Benchmarking:** 비디오 이해(Video Understanding)를 위한 평가 파이프라인을 구축하고 Gemini, GPT 등 최신 모델을 벤치마킹
-    * **Monitoring:** 시나리오 기반 평가 시스템을 설계하여 모델 성능을 지속적으로 모니터링하고 모델 업데이트 이후 발생하는 성능 저하(regression)를 자동으로 탐지
-    * **Visualization:** 연구 결과를 검토·공유하고 외부 파트너(예: 삼성전자)에 시연할 수 있는 인터랙티브 웹 대시보드 개발
-    * **Infrastructure:** 약 300개의 비디오를 병렬 처리할 수 있는 Ray 기반 분산 비디오 인덱싱 파이프라인을 설계하고, 비디오 파생 feature의 단일 소스(SSOT) 역할을 하는 Feast 기반 Feature Store 구축
-  * **Video Understanding 연구**
-    * **Video Scene Segmentation:** 비디오를 의미 있는 서사 단위(scene)로 분할하면서도 문맥 정보를 유지할 수 있는 영상 분할 방법 연구
-    * **Video RAG:** 시각 및 음성 정보를 활용하여 비디오 지식을 효율적으로 저장·검색할 수 있는 Retrieval-Augmented Generation(Video RAG) 접근 방식 연구
+  * **Context-aware Video Understanding**
+    * **Scene Segmentation:** 비디오의 맥락을 유지한 채 분석하기 위한 Multimodal Scene Segmentation 모델 연구 및 개발
+    * **Video Indexing:** Scene-aware Video Indexing 시스템 설계 및 개발
+  * **Video Content Moderation**
+    * **Benchmark Dataset:** Video Safety Benchmark Dataset 구축 Pipeline 개발
+    * **Model Benchmarking:** Video Safety Model 벤치마킹 및 성능 고도화
   """
 
 [[experience]]
