@@ -25,7 +25,7 @@ subtitle = ""
     * **Benchmark Dataset:** Video Safety 벤치마크 데이터셋 구축 파이프라인 개발
     * **Model Benchmarking:** Video Safety 모델 벤치마킹 및 성능 고도화
   * **AI Infrastructure**
-    * **Scalable AI Infrastructure:** Ray와 vLLM 기반의 대규모 비디오 처리를 위한 분산 AI 파이프라인 설계
+    * **Scalable AI System:** Ray와 vLLM 기반의 대규모 비디오 처리를 위한 분산 AI 파이프라인 설계
     * **Feature Management:** 비디오 파생 피처의 단일 신뢰 데이터(SSOT)를 위한 Feast 기반 Feature Store 구축 및 관리
   """
 
