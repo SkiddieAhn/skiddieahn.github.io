@@ -52,7 +52,7 @@ user_groups:
 
 I am a **Machine Learning Research Engineer** at **[PYLER](https://www.pyler.tech/)**, developing video understanding AI to boost advertising performance and protect and enhance brand value.
 
-I specialize in **video understanding**, **multi-modal deep learning**, and **scalable evaluation systems**, with experience in R&D for video anomaly detection, medical image segmentation, and end-to-end ML model evaluation platforms.
+I specialize in **video understanding**, **multi-modal deep learning**, and **scalable AI systems**, with experience in R&D for video anomaly detection, medical image segmentation, and end-to-end ML model inference pipelines.
 
 * Graduated with honors from Yonsei University (M.S.) and The Catholic University of Korea (B.S.)
 * Published as first author at premier international conference, and co-authored numerous publications
