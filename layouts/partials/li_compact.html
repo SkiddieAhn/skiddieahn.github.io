@@ -87,6 +87,9 @@
         {{ with .Params.url_pdf }}
           {{ $links = $links | append "arXiv" }}
         {{ end }}
+        {{ with .Params.doi }}
+          {{ $links = $links | append "DOI" }}
+        {{ end }}
         {{ with .Params.url_code }}
           {{ $links = $links | append "code" }}
         {{ end }}
@@ -102,6 +105,8 @@
           {{ range $i, $name := $links }}
             {{ if eq $name "arXiv" }}
               <a href="{{ $.Params.url_pdf }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
+            {{ else if eq $name "DOI" }}
+              <a href="https://doi.org/{{ $.Params.doi }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
             {{ else if eq $name "code" }}
               <a href="{{ $.Params.url_code }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
             {{ else if eq $name "project" }}
