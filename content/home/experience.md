@@ -23,7 +23,7 @@ subtitle = ""
     * **Model Optimization:** Analyze and evaluate data to optimize model performance, continuously refining rubrics and pseudo-labeling methods.
   * General Video Understanding
     * **Video Indexing:** Build vLLM-based pipelines for efficient large-scale content processing and utilization, integrating new models to expand features.
-    * **Video Segmentation:** Research multimodal video segmentation using visual, audio, and speech information for context-aware video understanding.
+    * **Scene Segmentation:** Research multimodal scene segmentation using visual, audio, and speech information for context-aware video understanding.
   """
 
 [[experience]]
