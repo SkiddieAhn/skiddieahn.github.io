@@ -19,8 +19,8 @@ subtitle = ""
   date_end = ""
   description = """
   * **Video Content Moderation**
-    * **Benchmark Dataset Development:** Trust & Safety 벤치마크 데이터셋 구축을 위해 ① 비디오 인덱싱 ② 수도 레이블링 ③ 레이블링 툴 개발·관리 등 전반적인 프로세스 구축
-    * **Model Evaluation & Performance Optimization:** 모델 성능 고도화를 위해 데이터를 분석·평가하고, 루브릭 및 수도 레이블링 방법을 지속적으로 개선
+    * **Benchmark Dataset:** Trust & Safety 벤치마크 데이터셋 구축을 위해 ① 비디오 인덱싱 ② 수도 레이블링 ③ 레이블링 툴 개발·관리 등 전반적인 프로세스 구축
+    * **Model Optimization:** 모델 성능 고도화를 위해 데이터를 분석·평가하고, 루브릭 및 수도 레이블링 방법을 지속적으로 개선
   * **General Video Understanding**
     * **Video Indexing:** 대규모 콘텐츠의 효율적인 처리와 활용을 위해 ① vLLM 기반 파이프라인을 구축하고, ② 신규 모델을 통합하여 피처 확장
     * **Video Segmentation:** Context-aware video understanding을 위해 시각·음성·대사 등 멀티모달 정보를 활용한 비디오 세그멘테이션 연구
