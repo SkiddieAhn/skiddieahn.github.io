@@ -57,4 +57,4 @@ user_groups:
 
 * 연세대학교 석사(M.S.) 및 가톨릭대학교 학사(B.S.) 우수 졸업
 * WACV, ACCV 등 주요 국제 학술대회 제1저자 논문 게재
-* IEEE TCSVT, TIP 등 저명 국제 학술지 심사위원(Reviewer) 활동
+* IEEE TIP, TCSVT 등 저명 국제 학술지 심사위원(Reviewer) 활동

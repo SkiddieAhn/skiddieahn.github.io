@@ -56,4 +56,4 @@ My current research focuses on **Video Content Moderation**, where I build Trust
 
 * Graduated with honors from Yonsei University (M.S.) and The Catholic University of Korea (B.S.)
 * Published as first author at major international conferences, including WACV, ACCV
-* Served as a reviewer for renowned international journals, including IEEE TCSVT, TIP
+* Served as a reviewer for renowned international journals, including IEEE TIP, TCSVT
