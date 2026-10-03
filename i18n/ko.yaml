@@ -1,2 +1,5 @@
 - id: see_certificate
   translation: 자세히 보기
+
+- id: btn_pdf
+  translation: paper

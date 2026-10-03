@@ -1,2 +1,5 @@
 - id: see_certificate
   translation: Learn More
+
+- id: btn_pdf
+  translation: paper
