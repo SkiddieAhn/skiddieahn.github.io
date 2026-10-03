@@ -84,11 +84,16 @@
       
       <div style="font-size: 0.9rem;">
         {{ $links := slice }}
+        {{ $paper_url := "" }}
         {{ with .Params.url_pdf }}
-          {{ $links = $links | append "arXiv" }}
+          {{ $paper_url = . }}
+        {{ else }}
+          {{ with .Params.doi }}
+            {{ $paper_url = printf "https://doi.org/%s" . }}
+          {{ end }}
         {{ end }}
-        {{ with .Params.doi }}
-          {{ $links = $links | append "DOI" }}
+        {{ if $paper_url }}
+          {{ $links = $links | append "paper" }}
         {{ end }}
         {{ with .Params.url_code }}
           {{ $links = $links | append "code" }}
@@ -103,10 +108,8 @@
         {{ if gt (len $links) 0 }}
           <span style="color: #0984e3;">[ </span>
           {{ range $i, $name := $links }}
-            {{ if eq $name "arXiv" }}
-              <a href="{{ $.Params.url_pdf }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
-            {{ else if eq $name "DOI" }}
-              <a href="https://doi.org/{{ $.Params.doi }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
+            {{ if eq $name "paper" }}
+              <a href="{{ $paper_url }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
             {{ else if eq $name "code" }}
               <a href="{{ $.Params.url_code }}" target="_blank" style="color: #0984e3; text-decoration: none;">{{ $name }}</a>
             {{ else if eq $name "project" }}
