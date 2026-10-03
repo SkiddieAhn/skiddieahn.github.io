@@ -38,8 +38,16 @@
     </div>
 
     <div class="btn-links" style="font-size: 0.85rem;">
-      {{ if $item.Params.url_pdf }}
-        <a href="{{ $item.Params.url_pdf }}" target="_blank" rel="noopener" style="color: #0066cc; margin-right: 0.8rem;">[ PDF ]</a>
+      {{ $paper_url := "" }}
+      {{ with $item.Params.url_pdf }}
+        {{ $paper_url = . }}
+      {{ else }}
+        {{ with $item.Params.doi }}
+          {{ $paper_url = printf "https://doi.org/%s" . }}
+        {{ end }}
+      {{ end }}
+      {{ if $paper_url }}
+        <a href="{{ $paper_url }}" target="_blank" rel="noopener" style="color: #0066cc; margin-right: 0.8rem;">[ paper ]</a>
       {{ end }}
       {{ if $item.Params.url_code }}
         <a href="{{ $item.Params.url_code }}" target="_blank" rel="noopener" style="color: #0066cc; margin-right: 0.8rem;">[ code ]</a>
