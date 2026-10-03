@@ -57,4 +57,4 @@ user_groups:
 
 * 연세대학교 석사(M.S.) 및 가톨릭대학교 학사(B.S.) 우수 졸업
 * 주요 국제 학술대회 제1저자 발표 및 다수 공동 저자 논문 게재
-* IEEE Transactions on Image Processing(TIP) 등 저명 국제 학술지 심사위원(Peer Reviewer) 활동
+* IEEE TIP, TCSVT 등 저명 국제 학술지 심사위원(Reviewer) 활동

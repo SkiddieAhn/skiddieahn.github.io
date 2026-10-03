@@ -56,4 +56,4 @@ My current research focuses on **Video Content Moderation**, where I build Trust
 
 * Graduated with honors from Yonsei University (M.S.) and The Catholic University of Korea (B.S.)
 * Published as first author at premier international conference, and co-authored numerous publications
-* Served as a peer reviewer for renowned international journals, including IEEE Transactions on Image Processing (TIP)
+* Served as a reviewer for renowned international journals, including IEEE TIP, TCSVT
