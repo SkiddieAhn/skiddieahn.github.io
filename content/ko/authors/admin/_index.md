@@ -53,7 +53,7 @@ user_groups:
 저는 **[PYLER](https://www.pyler.tech/)** 소속 **Machine Learning Research Engineer**입니다.
 비디오를 이해하는 AI 기술을 통해 광고 성과를 높이고 브랜드 가치를 보호 및 향상시키는 일을 하고 있습니다.
 
-현재는 **Video Content Moderation** 분야에서 Trust & Safety 벤치마크를 구축하고, **Video Understanding** 분야에서는 콘텐츠 맥락을 고려한 세그멘테이션 기술을 연구·개발하고 있습니다.
+현재는 **Video Content Moderation** 분야에서 Trust & Safety 벤치마크를 구축하고, **Video Understanding** 분야에서는 콘텐츠 맥락을 고려하기 위한 씬 세그멘테이션 기술을 연구하고 있습니다.
 
 * 연세대학교 석사(M.S.) 및 가톨릭대학교 학사(B.S.) 우수 졸업
 * 주요 국제 학술대회 제1저자 발표 및 다수 공동 저자 논문 게재
