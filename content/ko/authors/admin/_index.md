@@ -50,8 +50,8 @@ user_groups:
 - Researchers
 ---
 
-저는 **[PYLER](https://www.pyler.tech/)** 소속 **Machine Learning Research Engineer**입니다.
-비디오를 이해하는 AI 기술을 통해 광고 성과를 높이고 브랜드 가치를 보호 및 향상시키는 일을 하고 있습니다.
+저는 **[PYLER](https://www.pyler.tech/)**에서 **Machine Learning Research Engineer**로 근무하고 있습니다.
+비디오를 이해하는 AI 기술을 통해 광고 성과를 높이고 브랜드 가치를 보호하는 솔루션을 개발하고 있습니다.
 
 현재는 **Video Content Moderation** 분야에서 Trust & Safety 벤치마크를 구축하고, **Video Understanding** 분야에서는 콘텐츠 맥락을 고려하기 위한 씬 세그멘테이션 기술을 연구하고 있습니다.
 
