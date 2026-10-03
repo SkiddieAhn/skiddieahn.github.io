@@ -21,7 +21,7 @@ subtitle = ""
   * Video Content Moderation
     * **Benchmark Dataset:** Develop an end-to-end process for Trust & Safety benchmark dataset development, covering ① video indexing, ② pseudo-labeling, and ③ labeling tool development and management.
     * **Model Optimization:** Analyze and evaluate data to optimize model performance, continuously refining rubrics and pseudo-labeling methods.
-  * General Video Understanding
+  * Video Understanding
     * **Video Indexing:** Build vLLM-based pipelines for efficient large-scale content processing and utilization, integrating new models to expand features.
     * **Scene Segmentation:** Research multimodal scene segmentation using visual, audio, and speech information for context-aware video understanding.
   """
