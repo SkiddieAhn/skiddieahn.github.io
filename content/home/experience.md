@@ -19,11 +19,11 @@ subtitle = ""
   date_end = ""
   description = """
   * Video Content Moderation
-    * **Benchmark Pipeline:** Build pipelines for video indexing, pseudo-labeling, and in-house labeling tools to construct content safety benchmark datasets
-    * **Model Evaluation:** Refine rubrics and pseudo-labeling methods, raising model performance through iterative evaluation and improvement
+    * **Benchmark Dataset Development:** Build an end-to-end process for Trust & Safety benchmark dataset development, covering ① video indexing, ② pseudo-labeling, and ③ labeling tool development and management.
+    * **Model Evaluation & Performance Optimization:** Analyze and evaluate data to optimize model performance, continuously refining rubrics and pseudo-labeling methods.
   * General Video Understanding
-    * **Video Segmentation:** Research video segmentation using multimodal signals — visual, audio, and dialogue — for context-aware video understanding
-    * **Video Indexing:** Build vLLM-based video processing pipelines that convert content into structured data for efficient large-scale video processing and use
+    * **Video Indexing:** Build vLLM-based pipelines for efficient large-scale content processing and utilization, integrating new models to expand features.
+    * **Video Segmentation:** Research multimodal video segmentation using visual, audio, and speech information for context-aware video understanding.
   """
 
 [[experience]]
