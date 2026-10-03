@@ -52,7 +52,7 @@ user_groups:
 
 I am a **Machine Learning Research Engineer** at **[PYLER](https://www.pyler.tech/)**, developing Video Understanding AI to improve advertising performance and protect brand safety.
 
-My current work focuses on **Video Content Moderation**, where I build Trust & Safety benchmarks, and **Video Understanding**, where I research Scene Segmentation techniques to better capture content context.
+My current research focuses on **Video Content Moderation**, where I build Trust & Safety benchmarks, and **Video Understanding**, where I develop Scene Segmentation techniques to enhance contextual understanding.
 
 * Graduated with honors from Yonsei University (M.S.) and The Catholic University of Korea (B.S.)
 * Published as first author at premier international conference, and co-authored numerous publications
