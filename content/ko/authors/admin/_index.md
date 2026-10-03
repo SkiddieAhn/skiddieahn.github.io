@@ -42,7 +42,7 @@ address:
   postcode: ""
   country: 대한민국
 
-office: "PYLER AI Lab"
+office: "PYLER AI Team"
 
 superuser: true
 

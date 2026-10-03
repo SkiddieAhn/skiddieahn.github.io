@@ -42,7 +42,7 @@ address:
   postcode: ""
   country: South Korea
 
-office: "PYLER AI Lab"
+office: "PYLER AI Team"
 
 superuser: true
 
