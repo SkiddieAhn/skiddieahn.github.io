@@ -18,15 +18,12 @@ subtitle = ""
   date_start = "2025-07-01"
   date_end = ""
   description = """
-  * Context-aware Video Understanding
-    * **Scene Segmentation:** Research and develop multimodal scene segmentation models for context-aware video understanding
-    * **Video Indexing:** Design and develop scene-aware video indexing systems
   * Video Content Moderation
-    * **Benchmark Dataset:** Develop pipelines for building video safety benchmark datasets
-    * **Model Benchmarking:** Benchmark and improve video safety models
-  * AI Infrastructure
-    * **Scalable AI System:** Architect distributed AI pipelines using Ray and vLLM for large-scale video processing
-    * **Feature Management:** Build Feast-based feature stores as the single source of truth (SSOT) for video-derived features
+    * **Benchmark Pipeline:** Build pipelines for video indexing, pseudo-labeling, and in-house labeling tools to construct content safety benchmark datasets
+    * **Model Evaluation:** Refine rubrics and pseudo-labeling methods, raising model performance through iterative evaluation and improvement
+  * General Video Understanding
+    * **Video Segmentation:** Research video segmentation using multimodal signals — visual, audio, and dialogue — for context-aware video understanding
+    * **Video Indexing:** Build vLLM-based video processing pipelines that convert content into structured data for efficient large-scale video processing and use
   """
 
 [[experience]]
