@@ -56,5 +56,5 @@ user_groups:
 현재는 **Video Content Moderation** 분야에서 Trust & Safety 벤치마크를 구축하고, **Video Understanding** 분야에서는 영상의 맥락적 이해를 높이기 위해 씬 세그멘테이션 기술을 연구하고 있습니다.
 
 * 연세대학교 석사(M.S.) 및 가톨릭대학교 학사(B.S.) 우수 졸업
-* 주요 국제 학술대회 제1저자 발표 및 다수 공동 저자 논문 게재
-* IEEE TIP, TCSVT 등 저명 국제 학술지 심사위원(Reviewer) 활동
+* WACV, ACCV 등 주요 국제 학술대회 제1저자 논문 게재
+* IEEE TCSVT, TIP 등 저명 국제 학술지 심사위원(Reviewer) 활동

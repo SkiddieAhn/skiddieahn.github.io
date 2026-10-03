@@ -16,8 +16,8 @@ subtitle = ""
 
 **Reviewer**
 
-- IEEE Transactions on Image Processing (TIP) - 2026
 - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) - 2026
+- IEEE Transactions on Image Processing (TIP) - 2026
 - Pattern Recognition (PR) - 2024, 2025  
 - AAAI Conference on Artificial Intelligence (AAAI) - 2023, 2024
 - IEEE International Conference on Big Data and Smart Computing (BigComp) - 2023, 2024
